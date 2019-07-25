@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary1">
+
+    <TextView
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Savings Calculator"
+        android:id="@+id/txtTitle"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"/>
+
+    <EditText
+        android:maxLength="7"
+        android:textSize="32dp"
+        android:hint="Enter Yearly Income here"
+        android:textColorHint="@color/colorText"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtYearlyIncome"
+        android:textColor="@color/colorText"
+        />
+
+    <TextView
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weekly Savings:\n$0"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/txtWeeklySavings"/>
+
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"/>
+
+    <Button
+        android:onClick="function"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="30dp"
+        android:id="@+id/btnReset"
+        android:textColor="@color/colorText"
+        android:background="@color/colorPrimaryDark1"/>
+
+    <TextView
+        android:textSize="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Total"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"
+        android:id="@+id/txtTotalSavings"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App By Vipul"
+        android:textSize="70dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/txtName"/>
+
+</LinearLayout>
